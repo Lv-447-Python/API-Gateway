@@ -1,7 +1,6 @@
 version: '2.1'
 
 services:
-
   db:
     image: postgres
     volumes:
@@ -37,7 +36,7 @@ services:
     depends_on:
       db:
         condition: service_healthy
-
+  
   web-user:
     build: ../user-service-repository/
     command: >
@@ -48,6 +47,18 @@ services:
         python manage.py db upgrade
         python run.py"
     depends_on:
+      db:
+        condition: service_healthy
+
+  frontend:
+    build: ../frontend-components/
+    depends_on:
+      web-file:
+        condition: service_started
+      web-history:
+        condition: service_started
+      web-user:
+        condition: service_started
       db:
         condition: service_healthy
 
