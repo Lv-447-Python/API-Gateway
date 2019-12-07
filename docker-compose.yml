@@ -1,0 +1,67 @@
+version: '2.1'
+
+services:
+
+  db:
+    image: postgres
+    volumes:
+      - ./createdb.sh:/docker-entrypoint-initdb.d/init.sh
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  web-file:
+    build: ../file-service-repository/
+    command: >
+      /bin/bash -c "
+        python manage.py db init
+        python manage.py db upgrade
+        python manage.py db migrate
+        python manage.py db upgrade
+        python run.py"
+    depends_on:
+      db:
+        condition: service_healthy
+
+  web-history:
+    build: ../history-service-repository/
+    command: >
+      /bin/bash -c "
+        python manage.py db init
+        python manage.py db upgrade
+        python manage.py db migrate
+        python manage.py db upgrade
+        python run.py"
+    depends_on:
+      db:
+        condition: service_healthy
+
+  web-user:
+    build: ../user-service-repository/
+    command: >
+      /bin/bash -c "
+        python manage.py db init
+        python manage.py db upgrade
+        python manage.py db migrate
+        python manage.py db upgrade
+        python run.py"
+    depends_on:
+      db:
+        condition: service_healthy
+
+  nginx:
+    build: ./nginx/
+    ports:
+      - "80:80"
+    restart: always
+    depends_on:
+      web-file:
+        condition: service_started
+      web-history:
+        condition: service_started
+      web-user:
+        condition: service_started
+      db:
+        condition: service_healthy
