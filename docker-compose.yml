@@ -36,7 +36,7 @@ services:
     depends_on:
       db:
         condition: service_healthy
-  
+
   web-user:
     build: ../user-service-repository/
     command: >
@@ -52,6 +52,11 @@ services:
 
   frontend:
     build: ../frontend-components/
+    command: yarn start
+    links:
+      - web-file
+      - web-user
+      - web-history
     depends_on:
       web-file:
         condition: service_started
