@@ -35,6 +35,8 @@ services:
     depends_on:
       db:
         condition: service_healthy
+    volumes:
+    - files_folder:/file_service/files
 
   web-history:
     build: ../history-service-repository/
@@ -72,6 +74,8 @@ services:
     depends_on:
       rabbitmq:
         condition: service_started
+    volumes:
+    - files_folder:/file_generation_service_repo/files
 
   frontend:
     build: ../frontend-components/
@@ -107,3 +111,10 @@ services:
         condition: service_started
       db:
         condition: service_healthy
+
+volumes:
+  files_folder:
+    driver_opts:
+      type: none
+      device: $PWD
+      o: bind
