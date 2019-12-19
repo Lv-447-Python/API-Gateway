@@ -15,10 +15,7 @@ services:
     build: ../file-service-repository/
     command: >
       /bin/bash -c "
-        python manage.py db init
-        python manage.py db upgrade
-        python manage.py db migrate
-        python manage.py db upgrade
+        make init_db
         python run.py"
     depends_on:
       db:
