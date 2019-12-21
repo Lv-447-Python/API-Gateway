@@ -64,6 +64,21 @@ services:
       db:
         condition: service_healthy
 
+
+  web-generation:
+    build: ../file_generation_service_repository/
+    command: >
+      /bin/bash -c "
+        export PYTHONPATH="${PYTHONPATH}:/file_generation_service_repo"
+        supervisord -c supervisord.conf
+        python3 run.py"
+    depends_on:
+      rabbitmq:
+        condition: service_started
+    volumes:
+    - files_folder:/file_generation_service_repo/files
+
+
   frontend:
     build: ../frontend-components/
     command: yarn start
