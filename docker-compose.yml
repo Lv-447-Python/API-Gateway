@@ -13,15 +13,12 @@ services:
 
   rabbitmq:
     image: rabbitmq:3.7-management
-    volumes:
-      - ./rabbit_start.sh:/docker-entrypoint-initrabbit.d/init.sh
     ports:
       - "5672:5672"
       - "15672:15672"
     environment:
       - RABBITMQ_DEFAULT_USER=admin
       - RABBITMQ_DEFAULT_PASS=admin
-      - RABBITMQ_DEFAULT_VHOST=vhost
 
   web-file:
     build: ../file-service-repository/
@@ -78,6 +75,23 @@ services:
     volumes:
     - files_folder:/file_generation_service_repo/files
 
+  web-sharing:
+    build: ../file_sharing_service_repository/
+    volumes:
+#      - .:/file_sharing_service
+      - files_folder:/file_sharing_service/generated_files
+    command: >
+      /bin/bash -c "
+        python manage.py db init
+        python manage.py db upgrade
+        python manage.py db migrate
+        python manage.py db upgrade
+        python app.py"
+    depends_on:
+      db:
+        condition: service_healthy
+      rabbitmq:
+        condition: service_started
 
   frontend:
     build: ../frontend-components/
@@ -86,6 +100,8 @@ services:
       - web-file
       - web-user
       - web-history
+      - web-generation
+      - web-sharing
     depends_on:
       web-file:
         condition: service_started
@@ -93,8 +109,14 @@ services:
         condition: service_started
       web-user:
         condition: service_started
+      web-generation:
+        condition: service_started
+      web-sharing:
+        condition: service_started
       db:
         condition: service_healthy
+      rabbitmq:
+        condition: service_started
 
   nginx:
     build: ./nginx/
@@ -105,11 +127,17 @@ services:
       web-file:
         condition: service_started
       web-history:
-        condition: service_started
+          condition: service_started
       web-user:
-        condition: service_started
+          condition: service_started
+      web-generation:
+          condition: service_started
+      web-sharing:
+          condition: service_started
       db:
-        condition: service_healthy
+          condition: service_healthy
+      rabbitmq:
+          condition: service_started
 
 volumes:
   files_folder:

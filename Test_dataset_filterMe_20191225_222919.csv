@@ -1,0 +1,232 @@
+ID,Brand,Type,Color,Year,Engine capacity,Engine power,Mileage,Body type
+2050,Mazda,Bus,Silver,1938,1.0,400,25 000,SUV
+1542,Mazda,Motorcycle,Aquamarine,2010,1.2,110,95 000,SUV
+2566,Mazda,Truck,Aquamarine,2019,1.5,85,50 000,Station wagon
+4103,Mazda,Truck,White,1938,2.0,250,95 000,SUV
+10,Mazda,Special machinery,Red,2017,1.5,280,180 000,Station wagon
+9741,Mazda,Truck,Coral,2000,2.5,350,5 000,Station wagon
+526,Mazda,Trailer,Olive,2005,3.5,120,50 000,Station wagon
+16,Mazda,Motorcycle,Black,1975,4.0,180,95 000,Coupe
+9747,Mazda,Passenger,Azure,1920,2.3,220,300 000,Cabriolet
+4629,Mazda,Truck,Olive,1985,2.5,280,150 000,Cabriolet
+2072,Mazda,Bus,Aquamarine,2015,3.8,305,200 000,Cabriolet
+3609,Mazda,Passenger,Black,2007,1.0,85,25 000,Station wagon
+1051,Mazda,Water transport,Azure,1989,0.9,220,300 000,Cabriolet
+4126,Mazda,Special machinery,Red,2004,2.5,210,125 000,Hatchback
+9759,Mazda,Special machinery,White,1985,2.8,280,30 000,Cabriolet
+6689,Mazda,Truck,Cyan,2018,2.5,120,200 000,Hatchback
+6178,Mazda,Passenger,Azure,1850,2.8,110,30 000,SUV
+1060,Mazda,Special machinery,Black,2018,0.5,110,50 000,Hatchback
+2597,Mazda,Bus,Gray,1989,1.8,235,25 000,Coupe
+5676,Mazda,Special machinery,Orange,2012,1.2,250,250 000,Sedan
+5681,Mazda,Water transport,Olive,2010,3.2,250,30 000,Sedan
+7219,Mazda,Bus,Olden,1991,0.75,210,25 000,SUV
+4660,Mazda,Special machinery,Yellow,2015,3.8,380,110 000,Sedan
+9268,Mazda,Truck,Maroon,2018,1.2,220,150 000,Station wagon
+2102,Mazda,Passenger,Aquamarine,2019,4.0,290,60 000,Cabriolet
+5175,Mazda,Passenger,Blue,2004,3.5,315,250 000,Hatchback
+56,Mazda,Bus,Aquamarine,1991,2.5,210,40 000,Cabriolet
+6715,Mazda,Truck,Cyan,1850,2.5,300,25 000,Station wagon
+7228,Mazda,Special machinery,Black,1991,3.5,325,180 000,Station wagon
+61,Mazda,Passenger,Green,2013,2.5,75,300 000,Sedan
+1086,Mazda,Bus,Purple,2010,4.0,315,25 000,Cabriolet
+8766,Mazda,Passenger,Orange,1982,1.8,85,75 000,Hatchback
+9278,Mazda,Trailer,Maroon,1995,3.0,110,200 000,SUV
+578,Mazda,Water transport,White,2010,2.0,280,35 000,Hatchback
+2114,Mazda,Special machinery,Lime,2007,1.8,350,30 000,Hatchback
+3138,Mazda,Motorcycle,Blue,2017,2.5,315,25 000,Station wagon
+5703,Mazda,Special machinery,Silver,2006,4.0,220,125 000,Cabriolet
+584,Mazda,Truck,White,1991,2.0,305,20 000,Sedan
+9296,Mazda,Truck,Blue,2005,2.3,90,0,SUV
+5201,Mazda,Motorcycle,Charcoal,2006,1.2,250,300 000,SUV
+4179,Mazda,Water transport,Charcoal,2016,0.75,300,75 000,Cabriolet
+5204,Mazda,Passenger,Lime,1989,3.0,315,0,Station wagon
+5715,Mazda,Trailer,Maroon,1989,1.5,200,300 000,Sedan
+8787,Mazda,Truck,Olden,2019,3.0,380,50 000,Hatchback
+3671,Mazda,Truck,Azure,2013,4.0,350,150 000,Sedan
+6239,Mazda,Bus,Brown,2005,2.8,200,60 000,SUV
+97,Mazda,Trailer,White,2004,3.8,75,180 000,Coupe
+4197,Mazda,Trailer,Silver,2000,0.75,180,30 000,Station wagon
+2662,Mazda,Water transport,Charcoal,1989,3.2,120,250 000,Cabriolet
+616,Mazda,Trailer,Olive,2008,2.0,80,95 000,Cabriolet
+6251,Mazda,Truck,Gray,1989,1.2,80,5 000,Station wagon
+8302,Mazda,Bus,Orange,2004,0.9,400,50 000,Hatchback
+6262,Mazda,Motorcycle,Silver,2000,3.0,210,50 000,Coupe
+8823,Mazda,Special machinery,Gray,1991,1.5,250,125 000,Sedan
+9339,Mazda,Passenger,Magenta,2007,3.5,80,60 000,Sedan
+6780,Mazda,Passenger,Brown,1982,1.0,210,130 000,Station wagon
+1149,Mazda,Motorcycle,Blue,1850,4.0,220,50 000,SUV
+8318,Mazda,Water transport,Black,1920,2.8,290,130 000,Coupe
+4736,Mazda,Water transport,Orange,2009,3.5,80,250 000,Hatchback
+3201,Mazda,Bus,Lime,2018,3.8,120,95 000,Hatchback
+1669,Mazda,Water transport,Orange,1995,0.9,300,25 000,Coupe
+7817,Mazda,Passenger,Charcoal,2018,2.0,195,30 000,Coupe
+9354,Mazda,Bus,Blue,2005,2.3,400,35 000,SUV
+6797,Mazda,Passenger,Blue,2010,2.0,120,200 000,Hatchback
+145,Mazda,Water transport,Charcoal,2002,1.8,200,130 000,Coupe
+8340,Mazda,Special machinery,Maroon,2009,3.2,300,25 000,Sedan
+7829,Mazda,Water transport,Red,2001,3.0,305,250 000,SUV
+1176,Mazda,Water transport,Olden,2017,3.8,290,60 000,Sedan
+3226,Mazda,Special machinery,Gray,2012,3.0,400,110 000,Coupe
+8858,Mazda,Water transport,Green,1850,4.0,250,150 000,Cabriolet
+3740,Mazda,Bus,Yellow,1989,2.5,235,200 000,Sedan
+8352,Mazda,Trailer,Orange,1982,1.2,150,125 000,Station wagon
+4257,Mazda,Trailer,Olden,1982,3.2,80,200 000,Station wagon
+3241,Mazda,Motorcycle,Purple,2002,1.8,400,180 000,Station wagon
+4265,Mazda,Passenger,Maroon,1938,3.8,110,150 000,Hatchback
+7852,Mazda,Bus,Green,2019,0.9,315,130 000,Sedan
+685,Mazda,Truck,Red,2012,2.5,75,100 000,SUV
+9902,Mazda,Bus,Coral,2002,3.8,325,95 000,Coupe
+1712,Mazda,Water transport,Silver,2012,2.8,110,50 000,Cabriolet
+7860,Mazda,Motorcycle,Charcoal,2016,3.8,120,40 000,Hatchback
+6338,Mazda,Motorcycle,White,2015,1.8,340,5 000,Sedan
+6851,Mazda,Special machinery,Maroon,2004,2.3,250,125 000,Cabriolet
+3780,Mazda,Special machinery,Silver,2009,1.2,80,30 000,Coupe
+7875,Mazda,Passenger,Brown,2015,2.8,305,5 000,SUV
+7878,Mazda,Water transport,Black,2019,1.2,325,20 000,Coupe
+4807,Mazda,Special machinery,White,2000,1.2,180,50 000,Coupe
+2249,Mazda,Passenger,Orange,1982,1.0,305,35 000,Coupe
+3791,Mazda,Passenger,Yellow,1985,3.5,150,35 000,Cabriolet
+720,Mazda,Truck,Purple,2012,1.5,235,250 000,Cabriolet
+1745,Mazda,Passenger,Red,2018,3.0,85,75 000,Cabriolet
+6866,Mazda,Special machinery,Azure,2007,3.8,300,20 000,Coupe
+8400,Mazda,Motorcycle,Magenta,1989,4.0,250,30 000,Station wagon
+7380,Mazda,Passenger,Olden,2013,2.3,85,35 000,Sedan
+3285,Mazda,Motorcycle,Aquamarine,2002,1.8,220,40 000,SUV
+7893,Mazda,Special machinery,Lime,2001,3.5,80,130 000,Sedan
+5849,Mazda,Water transport,Olive,2009,3.5,280,180 000,Cabriolet
+3296,Mazda,Water transport,Azure,2008,2.0,340,40 000,SUV
+226,Mazda,Special machinery,Cyan,2001,0.9,325,40 000,Cabriolet
+4323,Mazda,Passenger,Orange,1995,3.0,290,250 000,Cabriolet
+9957,Mazda,Bus,Brown,1987,1.2,200,0,Sedan
+9961,Mazda,Trailer,Brown,1975,3.2,200,75 000,Station wagon
+3310,Mazda,Water transport,Maroon,2015,3.0,120,60 000,Cabriolet
+9459,Mazda,Motorcycle,Cyan,1975,2.0,120,125 000,Hatchback
+3317,Mazda,Truck,Olive,1995,4.0,75,125 000,Sedan
+4347,Mazda,Motorcycle,Charcoal,2001,1.0,85,125 000,Cabriolet
+8444,Mazda,Bus,Coral,2006,3.8,400,150 000,Station wagon
+8446,Mazda,Special machinery,White,2002,3.5,210,50 000,Station wagon
+7424,Mazda,Trailer,Gray,2006,1.8,340,180 000,SUV
+2305,Mazda,Bus,Olden,1982,1.8,300,110 000,Hatchback
+772,Mazda,Trailer,Black,2007,1.8,400,100 000,Cabriolet
+7428,Mazda,Motorcycle,Blue,2010,2.0,325,125 000,Hatchback
+4358,Mazda,Water transport,Red,1989,0.75,200,180 000,Coupe
+775,Mazda,Bus,Olden,2002,1.5,75,30 000,Coupe
+9995,Mazda,Trailer,White,1938,4.0,235,300 000,Hatchback
+269,Mazda,Motorcycle,Blue,2016,2.3,180,180 000,SUV
+6415,Mazda,Special machinery,Brown,2001,2.0,180,20 000,Cabriolet
+4881,Mazda,Passenger,Purple,1850,3.2,120,0,Coupe
+5910,Mazda,Motorcycle,Orange,2017,1.5,120,20 000,Hatchback
+1303,Mazda,Special machinery,Lime,1975,3.5,80,5 000,Coupe
+6423,Mazda,Bus,Brown,2019,2.5,75,95 000,Sedan
+9495,Mazda,Water transport,Yellow,2015,1.0,315,100 000,Hatchback
+3357,Mazda,Truck,Yellow,1991,0.5,305,180 000,Sedan
+5405,Mazda,Trailer,Brown,2005,1.2,305,5 000,Station wagon
+6429,Mazda,Special machinery,Olive,2019,0.5,90,40 000,Hatchback
+6943,Mazda,Truck,Aquamarine,2005,3.0,280,5 000,SUV
+289,Mazda,Passenger,Cyan,2008,1.5,350,200 000,Hatchback
+5410,Mazda,Bus,Yellow,2008,1.8,325,150 000,Station wagon
+2339,Mazda,Truck,Orange,2002,0.75,380,150 000,SUV
+7968,Mazda,Bus,Gray,2006,3.2,120,250 000,Hatchback
+5925,Mazda,Motorcycle,Red,2004,0.9,305,60 000,Sedan
+8995,Mazda,Water transport,Brown,2015,1.8,180,110 000,SUV
+9510,Mazda,Bus,Purple,1985,3.5,290,150 000,Station wagon
+6441,Mazda,Bus,Yellow,2009,2.3,110,60 000,SUV
+6954,Mazda,Special machinery,Purple,1985,2.3,250,200 000,Coupe
+7468,Mazda,Trailer,Brown,2016,0.5,150,125 000,Sedan
+9004,Mazda,Water transport,Coral,1991,3.8,350,35 000,Cabriolet
+4911,Mazda,Trailer,Olive,2004,0.75,380,25 000,SUV
+7984,Mazda,Special machinery,Silver,2012,0.75,400,100 000,Hatchback
+817,Mazda,Trailer,Charcoal,1985,3.2,300,35 000,Hatchback
+1329,Mazda,Motorcycle,Maroon,1991,2.8,110,250 000,Hatchback
+4916,Mazda,Motorcycle,Gray,1850,1.5,210,40 000,Sedan
+5428,Mazda,Water transport,Blue,1850,0.75,340,200 000,Station wagon
+9524,Mazda,Motorcycle,Olive,1991,0.9,195,180 000,Cabriolet
+2872,Mazda,Motorcycle,Black,2000,0.9,280,100 000,Cabriolet
+6968,Mazda,Trailer,Yellow,1975,0.75,195,40 000,Hatchback
+2874,Mazda,Passenger,Blue,1987,2.8,380,200 000,Station wagon
+5434,Mazda,Motorcycle,Coral,1975,0.5,305,150 000,Coupe
+831,Mazda,Motorcycle,Maroon,2017,0.5,75,40 000,SUV
+6978,Mazda,Motorcycle,Brown,1987,0.75,380,30 000,Coupe
+2372,Mazda,Water transport,Gray,1850,1.0,340,130 000,SUV
+9540,Mazda,Water transport,Charcoal,2013,1.0,75,5 000,Sedan
+1350,Mazda,Passenger,Gray,2016,4.0,290,100 000,Cabriolet
+9543,Mazda,Passenger,Magenta,1989,2.5,380,75 000,SUV
+2380,Mazda,Bus,Lime,2007,1.5,250,35 000,Coupe
+9037,Mazda,Passenger,Cyan,1985,4.0,280,20 000,Station wagon
+4432,Mazda,Bus,Purple,2007,0.5,235,60 000,SUV
+4944,Mazda,Trailer,Purple,2006,0.5,250,125 000,Cabriolet
+5968,Mazda,Water transport,Olive,2010,2.3,380,95 000,Sedan
+5971,Mazda,Trailer,Aquamarine,1982,0.5,300,200 000,Coupe
+853,Mazda,Passenger,Magenta,2019,1.2,250,40 000,Sedan
+3417,Mazda,Special machinery,Azure,1991,0.5,235,50 000,SUV
+8025,Mazda,Truck,Yellow,2018,4.0,380,20 000,Station wagon
+4443,Mazda,Passenger,Olive,1995,3.8,200,5 000,Station wagon
+1372,Mazda,Bus,Purple,1982,3.5,305,95 000,Coupe
+2908,Mazda,Truck,White,1850,1.2,290,0,Station wagon
+7516,Mazda,Bus,Olden,1995,3.8,305,0,SUV
+3426,Mazda,Trailer,Aquamarine,2008,1.0,110,100 000,Sedan
+355,Mazda,Passenger,Aquamarine,1991,2.8,325,150 000,Coupe
+5990,Mazda,Passenger,Brown,1995,0.9,85,75 000,Coupe
+4967,Mazda,Passenger,Cyan,2013,1.8,280,5 000,Hatchback
+8552,Mazda,Trailer,Lime,2017,0.5,200,300 000,Sedan
+9071,Mazda,Trailer,Olive,2002,0.75,90,35 000,Cabriolet
+8560,Mazda,Passenger,White,1982,3.2,120,25 000,Station wagon
+6515,Mazda,Passenger,Black,2009,2.8,75,110 000,Hatchback
+3447,Mazda,Bus,Brown,2012,2.5,300,40 000,Coupe
+4472,Mazda,Truck,Green,2010,1.8,290,180 000,Station wagon
+378,Mazda,Special machinery,Magenta,2018,0.5,150,20 000,Sedan
+7550,Mazda,Bus,Gray,1982,0.5,75,110 000,Cabriolet
+897,Mazda,Passenger,Black,2010,2.8,85,300 000,Station wagon
+8066,Mazda,Trailer,Olden,2015,0.5,290,95 000,Station wagon
+9094,Mazda,Trailer,Gray,2009,3.5,195,150 000,Sedan
+7048,Mazda,Truck,Yellow,2006,2.3,150,35 000,Cabriolet
+9609,Mazda,Bus,Brown,2013,0.9,150,300 000,Cabriolet
+2442,Mazda,Trailer,Green,1975,0.5,340,250 000,Coupe
+3467,Mazda,Special machinery,Olden,2008,3.8,210,110 000,Station wagon
+7563,Mazda,Trailer,Red,1975,3.2,380,300 000,SUV
+5517,Mazda,Water transport,Cyan,2001,1.5,315,250 000,Station wagon
+1937,Mazda,Special machinery,Coral,2018,2.3,325,60 000,SUV
+9618,Mazda,Bus,Red,1975,1.8,200,300 000,Coupe
+1940,Mazda,Special machinery,Yellow,2013,0.75,300,100 000,Hatchback
+920,Mazda,Motorcycle,Black,1991,0.75,80,100 000,Hatchback
+6045,Mazda,Water transport,Yellow,2005,2.8,75,125 000,Hatchback
+415,Mazda,Passenger,Green,2018,0.5,290,30 000,Sedan
+1953,Mazda,Passenger,Lime,2002,3.8,90,200 000,Cabriolet
+8098,Mazda,Passenger,Green,2007,3.5,180,100 000,Station wagon
+1956,Mazda,Water transport,Blue,1989,4.0,400,95 000,SUV
+1449,Mazda,Truck,Maroon,1850,2.8,90,250 000,Station wagon
+5034,Mazda,Special machinery,White,1920,0.9,200,130 000,SUV
+8105,Mazda,Special machinery,Aquamarine,2019,1.8,110,180 000,Coupe
+1966,Mazda,Special machinery,Magenta,1985,0.75,340,180 000,Station wagon
+8111,Mazda,Motorcycle,Brown,2009,2.8,380,0,Cabriolet
+7089,Mazda,Passenger,Black,2007,1.5,315,50 000,Cabriolet
+5042,Mazda,Passenger,Purple,2005,0.5,85,110 000,Sedan
+948,Mazda,Motorcycle,Coral,2019,2.8,300,150 000,SUV
+8629,Mazda,Truck,Orange,2019,2.3,90,0,Station wagon
+1976,Mazda,Special machinery,Silver,1920,1.5,280,100 000,Sedan
+2490,Mazda,Truck,White,1995,2.3,350,40 000,Hatchback
+5563,Mazda,Passenger,Azure,2009,1.2,305,200 000,SUV
+957,Mazda,Special machinery,Red,2007,3.2,280,200 000,SUV
+9663,Mazda,Water transport,Maroon,2016,1.8,350,5 000,Station wagon
+4033,Mazda,Special machinery,Magenta,1991,4.0,200,0,SUV
+9158,Mazda,Bus,Aquamarine,2000,3.8,80,0,Coupe
+7624,Mazda,Truck,Magenta,1991,4.0,90,95 000,Sedan
+1994,Mazda,Motorcycle,Cyan,2006,2.8,220,100 000,Sedan
+973,Mazda,Motorcycle,Red,1991,3.0,220,300 000,Sedan
+1998,Mazda,Passenger,Magenta,2016,4.0,235,30 000,Cabriolet
+3022,Mazda,Truck,Lime,2006,1.5,325,75 000,Cabriolet
+5583,Mazda,Special machinery,Black,2005,3.5,380,75 000,Station wagon
+9166,Mazda,Special machinery,Olive,1850,1.5,80,75 000,Coupe
+2517,Mazda,Water transport,Coral,1982,1.5,315,0,Station wagon
+4572,Mazda,Truck,Gray,1938,3.5,200,50 000,Hatchback
+7145,Mazda,Bus,Olden,1995,1.5,250,95 000,SUV
+3052,Mazda,Motorcycle,Gray,2005,0.9,80,5 000,Station wagon
+9197,Mazda,Motorcycle,Coral,2010,0.9,380,125 000,Coupe
+494,Mazda,Motorcycle,Coral,1850,1.5,280,150 000,Coupe
+5614,Mazda,Special machinery,Red,1850,2.5,210,5 000,Cabriolet
+6639,Mazda,Trailer,Olive,1985,3.0,325,150 000,Coupe
+4598,Mazda,Trailer,Orange,2016,2.0,340,25 000,Cabriolet
+9208,Mazda,Special machinery,Lime,1938,1.8,380,40 000,SUV
+507,Mazda,Trailer,Green,2006,2.0,120,60 000,SUV
+1533,Mazda,Bus,Cyan,2000,0.75,235,125 000,Cabriolet

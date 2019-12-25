@@ -1,0 +1,21 @@
+ID,Brand,Type,Color,Year,Engine capacity,Engine power,Mileage,Body type
+2,Chevrolet,Bus,Olive,2017,3.5,305,5 000,Cabriolet
+122,Dodge,Motorcycle,Olive,2010,1.2,90,125 000,Coupe
+163,Hyundai,Trailer,Olive,1991,2.5,235,150 000,SUV
+230,Lotus,Special machinery,Olive,2005,2.5,280,110 000,Sedan
+199,Porsche,Passenger,Olive,2001,1.2,210,35 000,Cabriolet
+72,Bentley,Passenger,Olive,2016,2.3,80,100 000,Station wagon
+168,Lada,Special machinery,Olive,1920,3.0,280,100 000,Station wagon
+60,Opel,Motorcycle,Olive,2001,2.3,90,30 000,Hatchback
+231,Cadillac,Trailer,Olive,1987,3.0,90,200 000,Hatchback
+108,Daewoo,Water transport,Olive,2001,0.75,180,20 000,Coupe
+297,Bentley,Bus,Olive,1995,1.0,220,35 000,Hatchback
+177,Renault,Bus,Olive,2004,3.5,120,40 000,Hatchback
+284,Cadillac,Trailer,Olive,2016,2.0,235,5 000,Sedan
+24,Lotus,Truck,Olive,2007,1.0,110,200 000,Station wagon
+25,Peugeot,Motorcycle,Olive,2019,0.5,195,35 000,Station wagon
+26,Cadillac,Water transport,Olive,2017,3.8,380,125 000,Station wagon
+28,Chrysler,Truck,Olive,2009,3.5,305,25 000,SUV
+121,Smart,Trailer,Olive,2009,0.75,305,35 000,Hatchback
+126,Hyundai,Motorcycle,Olive,1985,4.0,75,30 000,Coupe
+127,Lamborghini,Bus,Olive,2019,2.8,380,60 000,SUV
