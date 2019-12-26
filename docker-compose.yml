@@ -1,4 +1,4 @@
-version: '2.1'
+version: '3'
 
 services:
   db:
@@ -13,88 +13,82 @@ services:
 
   rabbitmq:
     image: rabbitmq:3.7-management
-    volumes:
-      - ./rabbit_start.sh:/docker-entrypoint-initrabbit.d/init.sh
     ports:
       - "5672:5672"
       - "15672:15672"
     environment:
       - RABBITMQ_DEFAULT_USER=admin
       - RABBITMQ_DEFAULT_PASS=admin
-      - RABBITMQ_DEFAULT_VHOST=vhost
 
   web-file:
     build: ../file-service-repository/
-    command: >
-      /bin/bash -c "
-        python manage.py db init
-        python manage.py db upgrade
-        python manage.py db migrate
-        python manage.py db upgrade
-        python run.py"
     depends_on:
-      db:
-        condition: service_healthy
+      - db
+    links:
+      - db
+    restart: always
+    command: ['./wait-for-it.sh', 'db:5432', '--', 'make', 'run_docker']
     volumes:
-    - files_folder:/file_service/files
+      - files_folder:/file_service/files
 
   web-history:
     build: ../history-service-repository/
-    command: >
-      /bin/bash -c "
-        python manage.py db init
-        python manage.py db upgrade
-        python manage.py db migrate
-        python manage.py db upgrade
-        python run.py"
+    restart: always
     depends_on:
-      db:
-        condition: service_healthy
+      - db
+    links:
+      - db
+    command: ['./wait-for-it.sh', 'db:5432', '--', 'make', 'run_docker']
 
   web-user:
     build: ../user-service-repository/
-    command: >
-      /bin/bash -c "
-        python manage.py db init
-        python manage.py db upgrade
-        python manage.py db migrate
-        python manage.py db upgrade
-        python run.py"
+    restart: always
     depends_on:
-      db:
-        condition: service_healthy
+      - db
+    links:
+      - db
+    command: ['./wait-for-it.sh', 'db:5432', '--', 'make', 'run_docker']
 
 
   web-generation:
     build: ../file_generation_service_repository/
-    command: >
-      /bin/bash -c "
-        export PYTHONPATH="${PYTHONPATH}:/file_generation_service_repo"
-        supervisord -c supervisord.conf
-        python3 run.py"
+    restart: always
     depends_on:
-      rabbitmq:
-        condition: service_started
+      - rabbitmq
+    links:
+      - rabbitmq
+      - db
+    command: ['./wait-for-it.sh', 'db:5432', '--', 'make', 'run_docker']
     volumes:
-    - files_folder:/file_generation_service_repo/files
+      - files_folder:/file_generation_service_repo/files
 
+  web-sharing:
+    build: ../file_sharing_service_repository/
+    restart: always
+    depends_on:
+      - rabbitmq
+      - db
+    links:
+      - rabbitmq
+      - db
+    command: ['./wait-for-it.sh', 'db:5432', '--', 'make', 'run_docker']
 
   frontend:
     build: ../frontend-components/
     command: yarn start
+    restart: always
+    depends_on:
+      - web-file
+      - web-history
+      - web-user
+      - web-generation
+      - db
     links:
       - web-file
       - web-user
       - web-history
-    depends_on:
-      web-file:
-        condition: service_started
-      web-history:
-        condition: service_started
-      web-user:
-        condition: service_started
-      db:
-        condition: service_healthy
+      - web-generation
+      - db
 
   nginx:
     build: ./nginx/
@@ -102,14 +96,17 @@ services:
       - "80:80"
     restart: always
     depends_on:
-      web-file:
-        condition: service_started
-      web-history:
-        condition: service_started
-      web-user:
-        condition: service_started
-      db:
-        condition: service_healthy
+      - web-file
+      - web-history
+      - web-user
+      - web-generation
+      - db
+    links:
+      - web-file
+      - web-user
+      - web-history
+      - web-generation
+      - db
 
 volumes:
   files_folder:
