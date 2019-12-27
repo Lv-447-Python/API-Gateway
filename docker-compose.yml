@@ -58,7 +58,7 @@ services:
     links:
       - rabbitmq
       - db
-    command: ['./wait-for-it.sh', 'db:5432', '--', 'make', 'run_docker']
+    command: ['./wait-for-it.sh', 'db:5432','--','./wait-for-it.sh', 'rabbitmq:5672', '--', 'make', 'run_docker']
     volumes:
       - files_folder:/file_generation_service_repo/files
 
@@ -71,7 +71,24 @@ services:
     links:
       - rabbitmq
       - db
-    command: ['./wait-for-it.sh', 'db:5432', '--', 'make', 'run_docker']
+    command: ['./wait-for-it.sh', 'db:5432','--','./wait-for-it.sh', 'rabbitmq:5672', '--', 'make', 'run_docker']
+
+  notification:
+    build: ../notification-service/
+    restart: always
+    depends_on:
+      - web-user
+      - web-file
+      - web-history
+      - web-generation
+      - web-sharing
+    links:
+      - web-user
+      - web-file
+      - web-history
+      - web-generation
+      - web-sharing
+    command: make run_docker
 
   frontend:
     build: ../frontend-components/
